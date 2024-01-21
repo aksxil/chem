@@ -1,0 +1,149 @@
+
+@font-face{
+    font-family: hel;
+    src: url(./fonts/HelveticaNowDisplayBlack.55b89300.ttf);
+}
+@font-face{
+    font-family: bol;
+    src: url(./fonts/HelveticaNowDisplay-Bold.80f363cb.ttf);
+}
+@font-face{
+    font-family: reg;
+    src: url(./fonts/HelveticaNowDisplay-Regular.a308f4a6.ttf);
+}
+@font-face{
+    font-family: med;
+    src: url(./fonts/HelveticaNowDisplay-Medium.18f5bed9.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: hel;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+#main{
+    position: relative;
+}
+
+.nav{
+    height: 14vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vh;
+}
+.nav2{
+    width: 80%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: reg;
+    font-weight: 100;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    background-image: url(./img/home-anm-slide1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page1 .row{
+    height: 18vh;
+    width: 100%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page1 .row h1{
+    font-size: 18vh;
+    font-weight: 100;
+}
+.row h1 span{
+    color: rgb(229, 0, 229);
+}
+.row2 {
+    padding-left: 20vh;
+}
+.layer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(171, 0, 171);
+    position: absolute;
+    z-index: 999;
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.inlay{
+    background-color: #E500E5;
+    height: 100vh;
+    width: 10px;
+    opacity: 1;
+}
+.layer2{
+    height: 100vh;
+    /* width: 100vw; */
+    background-color: rgb(157, 171, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    /* opacity: 0; */
+    background-image: url(./img/home-anm-slide2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 0;
+    flex-shrink: 0;
+    padding-top: 10vh;
+}
+.row p{
+    /* width: 60%; */
+    font-size: 2vw;
+    opacity: .8;
+    font-family: reg;
+    /* background-color: red; */
+    padding-top: 20px;
+    padding-left: 20vh;
+}
+.layer2 h1{
+    padding-left: 10vh;
+    font-size: 15vh;
+    line-height: 1;
+    white-space: nowrap;
+    color: white;
+}
+.layer2 h1 span{
+    color: black;
+}
+@media (max-width:600px) {
+    #page1 .row {
+        height: 10vh;
+        /* background-color: orange; */
+    }
+    #page1 .row h1{
+        font-size: 8vh;
+        white-space: nowrap;
+    }
+    #page1{
+        justify-content: center;
+        align-items: center;
+    }
+}
